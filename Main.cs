@@ -8,6 +8,7 @@ using Steamworks;
 using System.Linq;
 using Rocket.Unturned.Events;
 using Rocket.API;
+using Rocket.API.Collections;
 
 namespace XPlugins.RealisticVehiclesLock
 {
@@ -25,6 +26,12 @@ namespace XPlugins.RealisticVehiclesLock
             VehicleManager.onExitVehicleRequested += OnLeaveVehicle;
             UnturnedPlayerEvents.OnPlayerUpdateGesture += OnGesture;
         }
+
+        public override TranslationList DefaultTranslations => new TranslationList()
+        {
+            { "Vehicle-Locked", "Now your vehicle is locked!" },
+            { "Other-Vehicle-Locked", "This vehicle is locked!" }
+        };
 
         private void OnLeaveVehicle(Player player, InteractableVehicle vehicle, ref bool cancel, ref Vector3 pendingLocation, ref float pendingYaw)
         {
@@ -45,7 +52,7 @@ namespace XPlugins.RealisticVehiclesLock
             {
                 return;
             }
-            else if(vehicle.isLocked == true)
+            else if (vehicle.isLocked == true)
             {
                 cancel = false;
                 ChatManager.say("[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to get in this vehicle!", Color.red, false);
@@ -62,6 +69,10 @@ namespace XPlugins.RealisticVehiclesLock
 
                 if (vehicle1 != null)
                 {
+                    if ((vehicle1.lockedOwner != player.CSteamID || vehicle1.lockedGroup != player.SteamGroupID) && vehicle1.isLocked == true)
+                    {
+                        ChatManager.say(player.CSteamID, Translate("Other-Vehicle-Locked"), Color.red, false);
+                    }
                     if ((vehicle1.lockedOwner == player.CSteamID || vehicle1.lockedGroup == player.SteamGroupID) && vehicle1.isLocked == true)
                     {
                         VehicleManager.instance.channel.send("tellVehicleLock", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, vehicle1.instanceID, player.CSteamID, player.SteamGroupID, false);
@@ -69,6 +80,7 @@ namespace XPlugins.RealisticVehiclesLock
                     else if ((vehicle1.lockedOwner == player.CSteamID || vehicle1.lockedGroup == player.SteamGroupID) && vehicle1.isLocked == false)
                     {
                         VehicleManager.instance.channel.send("tellVehicleLock", ESteamCall.ALL, ESteamPacket.UPDATE_RELIABLE_BUFFER, vehicle1.instanceID, player.CSteamID, player.SteamGroupID, true);
+                        ChatManager.say(player.CSteamID, Translate("Vehicle-Locked"), Color.red, false);
                     }
                 }
             }
