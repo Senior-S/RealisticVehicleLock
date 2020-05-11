@@ -41,8 +41,9 @@ namespace XPlugins.RealisticVehiclesLock
             }
             else
             {
+                UnturnedPlayer user = UnturnedPlayer.FromPlayer(player);
                 cancel = false;
-                ChatManager.say("[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to leave this vehicle!", Color.red, false);
+                ChatManager.say(user.CSteamID, "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to leave this vehicle!", Color.red, false);
             }
         }
 
@@ -54,8 +55,9 @@ namespace XPlugins.RealisticVehiclesLock
             }
             else if (vehicle.isLocked == true)
             {
+                UnturnedPlayer user = UnturnedPlayer.FromPlayer(player);
                 cancel = false;
-                ChatManager.say("[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to get in this vehicle!", Color.red, false);
+                ChatManager.say(user.CSteamID, "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to get in this vehicle!", Color.red, false);
             }
         }
 
