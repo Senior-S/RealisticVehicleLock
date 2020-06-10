@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Rocket.Core.Plugins;
 using SDG.Unturned;
 using UnityEngine;
@@ -30,7 +30,9 @@ namespace XPlugins.RealisticVehiclesLock
         public override TranslationList DefaultTranslations => new TranslationList()
         {
             { "Vehicle-Locked", "Now your vehicle is locked!" },
-            { "Other-Vehicle-Locked", "This vehicle is locked!" }
+            { "Other-Vehicle-Locked", "This vehicle is locked!" },
+			{ "Enter-Vehicle-Locked", "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to enter in this vehicle!" },
+			{ "Leave-Vehicle-Locked", "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to leave this vehicle!" }
         };
 
         private void OnLeaveVehicle(Player player, InteractableVehicle vehicle, ref bool cancel, ref Vector3 pendingLocation, ref float pendingYaw)
@@ -43,7 +45,7 @@ namespace XPlugins.RealisticVehiclesLock
             {
                 UnturnedPlayer user = UnturnedPlayer.FromPlayer(player);
                 cancel = false;
-                ChatManager.say(user.CSteamID, "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to leave this vehicle!", Color.red, false);
+                ChatManager.say(user.CSteamID, Translate("Leave-Vehicle-Locked"), Color.red, false);
             }
         }
 
@@ -57,7 +59,7 @@ namespace XPlugins.RealisticVehiclesLock
             {
                 UnturnedPlayer user = UnturnedPlayer.FromPlayer(player);
                 cancel = false;
-                ChatManager.say(user.CSteamID, "[RealisticVehiclesLock] This vehicle is locked, you need to unlock it to get in this vehicle!", Color.red, false);
+                ChatManager.say(user.CSteamID, Translate("Enter-Vehicle-Locked"), Color.red, false);
             }
         }
 
