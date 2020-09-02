@@ -1,0 +1,5 @@
+plugin_translations:
+  enter_vehicle_locked: "This vehicle is locked, you need to unlock it to enter in this vehicle."
+  leave_vehicle_locked: "This vehicle is locked, you need to unlock it to leave the vehicle."
+  vehicle_locked: "Now your vehicle is locked."
+  other_vehicle_locked: "This vehicle is locked!"
