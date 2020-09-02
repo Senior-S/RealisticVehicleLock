@@ -80,8 +80,6 @@ namespace RealisticVehicleLock
         {
             switch (W)
             {
-                /* This replace the event "OnPlayerUpdateGesture" from RocketMod
-                 */
                 case "tellGesture":
                     if (arg[0].ToString() == "4" || arg[0].ToString() == "5")
                     {
