@@ -16,8 +16,8 @@ namespace RealisticVehicleLock
             SteamChannel.onTriggerSend += OnTriggerSend;
             VehicleManager.onEnterVehicleRequested += OnEnterVehicle;
             VehicleManager.onExitVehicleRequested += OnLeaveVehicle;
-            Logger.Log("[RealisticVehicleLock] Plugin loaded corrrectly!", ConsoleColor.Green);
-            Logger.Log("[RealisticVehicleLock] If you have any error you can contact the owner in discord: Senior S#9583", ConsoleColor.Green);
+            Logger.Log(" Plugin loaded corrrectly!", ConsoleColor.Green);
+            Logger.Log(" More plugins: www.dvtserver.xyz", ConsoleColor.Green);
         }
 
         private void OnLeaveVehicle(Player player, InteractableVehicle vehicle, ref bool cancel, ref Vector3 pendingLocation, ref float pendingYaw)
@@ -101,7 +101,7 @@ namespace RealisticVehicleLock
                     { "enter_vehicle_locked", "[RealisticVehicleLock] This vehicle is locked, you need to unlock it to enter in this vehicle."},
                     { "leave_vehicle_locked", "[RealisticVehicleLock] This vehicle is locked, you need to unlock it to leave the vehicle." },
                     { "vehicle_locked", "[RealisticVehicleLock] Now your vehicle is locked." },
-                    { "Fly_Stop", "[RealisticVehicleLock] This vehicle is locked!" }
+                    { "vehicle_is_locked", "[RealisticVehicleLock] This vehicle is locked!" }
                 };
             }
         }

@@ -1,0 +1,28 @@
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\Assembly-CSharp.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\Rocket.API.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\Rocket.Core.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\Rocket.Unturned.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\UnityEngine.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\UnityEngine.PhysicsModule.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csproj.CopyComplete
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.pdb
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.dll
+C:\Users\maxim\Desktop\Plugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.pdb
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.dll
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.pdb
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csproj.CopyComplete
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.dll
+C:\Users\maxim\Desktop\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.pdb
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.dll
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\bin\Debug\RealisticVehicleLock.pdb
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csprojAssemblyReference.cache
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csproj.CoreCompileInputs.cache
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehiclesLock.csproj.CopyComplete
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.dll
+E:\Copia de seguridad\Plugins\RocketModPlugins\RealisticVehiclesLock\obj\Debug\RealisticVehicleLock.pdb
